@@ -11,7 +11,7 @@ public class tictactoe {
         }
         
         char currentPlayer='X'; // player X starts first
-        Scanner scanner=new Scanner(System.in); // to get input from user
+        Scanner sc=new Scanner(System.in); // to get input from user
         boolean gameOver=false; // to check if game is finished
         
         // Game loop, keep playing until someone wins or it's a draw
@@ -20,8 +20,8 @@ public class tictactoe {
             
             // Ask for input
             System.out.println("Player "+currentPlayer+", enter row (0-2) and column (0-2): ");
-            int row=scanner.nextInt();
-            int col=scanner.nextInt();
+            int row=sc.nextInt();
+            int col=sc.nextInt();
             
             // Check if the spot is empty
             if (row>=0 && row<3 && col>=0 && col<3 && board[row][col]==' ') {
